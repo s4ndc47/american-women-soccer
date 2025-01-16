@@ -1,0 +1,223 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #454040;
+  color: white
+}
+
+
+#lineChart {
+  width: 100%;
+  height: auto;
+}
+
+.image_container {
+  width: 100%; /* Adjust based on your layout needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#timeline-container {
+  width: 100%; /* Adjust based on your layout needs */
+  overflow-x: scroll;
+  overflow-y: hidden; /* Prevent vertical scrolling */
+}
+
+#timeline-container img {
+  width: auto; /* Maintain image aspect ratio */
+  height: auto; /* Adjust height as needed */
+  display: block; /* Remove extra space below the image */
+}
+
+.outer-cont, .outer-cont-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#attendance-container, #timeline-cont-1 {
+  position: relative; /* Establishes a positioning context for absolute positioning inside */
+}
+
+.attedence-cont-1, .attedence-cont-2, .timeline-cont-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.team-map-cont {
+  height: 1200px;
+  width: 1200px;
+}
+.caption-text {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  font-family: 'Merriweather', serif; 
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merriweather', serif; 
+  font-weight: 900;
+  margin-top: 5%;
+  font-size: 180%;
+  color: #e9a1ff;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  font-size: 8px;
+  width: 100px;
+  background: white;
+  color: #333;
+  border: 1px solid #d3d3d3;
+  padding: 2px;
+  display: none;
+  pointer-events: none;
+}
+
+#attendance-svg {
+  position: relative;
+  width: auto; /* Adjust based on your needs */
+  height: auto; /* Adjust based on your needs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.overlay-text-2016 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 0.5%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color: white;
+  font-size: 14px;
+  align-items: Left;
+}
+.overlay-text-2017 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 10.8%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color: white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2018 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 22.2%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color: white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2019 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 33.7%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color:  white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2021 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 44.2%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color:  white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2022 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 55.7%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color:  white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2023 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 68.2%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color:  white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.overlay-text-2024 {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 82%;  /* Center vertically */
+  left: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color:  white;
+  font-size: 14px;
+  align-items: Left;
+}
+
+.attedence-title {
+  position: absolute; /* Positioned absolutely within the relative container */
+  top: 10%;  /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+  color: #000000;
+  font-size: 12px;
+  align-items: Left;
+}
+
+.axis.x {
+  font-size: 12px; /* Adjust font size */
+  color: rgb(192, 192, 192); /* Change the text color */
+}
+
+.axis.x path, .axis.x line {
+  stroke: rgb(192, 192, 192); /* Change the color of the axis lines */
+  stroke-width: 1px; /* Adjust the thickness of the axis */
+}
+
+.axis.x text {
+  fill: rgb(192, 192, 192); /* Text color */
+}
+
+td {
+  border: none; /* Removes the border */
+  text-align: left; /* Aligns table content to the left */
+  padding: 1px 8px; /* Adjust column spacing with horizontal padding */
+}
+
+th {
+  border: none; /* Removes the border */
+  text-align: left; /* Aligns table content to the left */
+  padding: 1px 8px; /* Adjust column spacing with horizontal padding */
+  color: #00ffa2;
+}
+table {
+  border: none; /* Removes the outer rectangle border */
+}
+
+table tr {
+  transition: color 0.5s ease;
+}

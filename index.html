@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizaing the Rise of Women Soccer </title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts/match-attedence.js"></script>
+    <script src="scripts/membership-timeline.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="scripts/team-map.js"></script>
+    <script src="scripts/point-difference.js"></script>
+    <script src="scripts/line-chart-attedence.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="image_container">
+        <img src="https://photolibrary.commons.gc.cuny.edu/wp-content/blogs.dir/27109/files/2025/01/cover_MR@2x.png" width="100%">
+    </div>
+    <div class="title">
+        <h1>Visualizing The Rise Of</br>America Women Soccer</h1>
+    </div>
+    <div class="outer-cont">
+        <iframe src="artboard/name_date.html" width="725 px" height="100 px" style="border:none;"></iframe> 
+    </div>
+
+    <div class="outer-cont">
+        <iframe src="artboard/introduction.html" width="725 px" height="810 px" style="border:none;"></iframe>
+    </div>
+
+    <div class="outer-cont">
+        <iframe src="artboard/timeline intro.html" width="725 px" height="681 px" style="border:none;"></iframe>
+    </div>
+    <div id="timeline-container">
+        <img src="https://photolibrary.commons.gc.cuny.edu/wp-content/blogs.dir/27109/files/2024/12/timeline2024.png" alt="Historical Timeline">
+    </div>
+
+    <div class="outer-cont">
+         <p>         </p>
+    </div>
+    <div class="outer-cont">
+        <p>         </p>
+   </div>
+
+    <div class="outer-cont">
+
+        <iframe src="artboard/Overview_NWSL.html" width="725 px" height="185 px" style="border:none;"></iframe>
+   
+    </div>
+
+    <div class="outer-cont">
+        <div class="attedence-cont-2">
+        <iframe src="artboard/membership_timeline.html" width="1208 px" height="220 px" style="border:none;"></iframe>
+        </div>     
+    </div>
+
+
+    <div class="outer-cont">
+        <div class="attedence-cont-2">
+    
+        <iframe src="artboard/goal and point contribution 2.html" width="725 px" height="3150 px px px" style="border:none;"></iframe>
+        </div>     
+    </div>
+
+    <div class="outer-cont">
+        <select id="table-selector">
+          <option value="table1">Original Rank Result</option>
+          <option value="table2">Allyson Schlegel (Chicago Red Stars)</option>
+          <option value="table3">Ashley Sanchez (North Carolina Courage)</option>
+          <option value="table4">Asisat Oshoala (Bay FC)</option>
+          <option value="table5">Barbra Banda (Orlando Pride)</option>
+          <option value="table6">Croix Bethune (Washington Spirit)</option>
+          <option value="table7">Débora Cristiane de Oliveira (Kansas City Current)</option>
+          <option value="table8">Ella Stevens (NJ/NY Gothan FC)</option>
+          <option value="table9">Esther González (NJ/NY Gothan FC)</option>
+          <option value="table10">Mallory_Swanson (Chicago Rd Stars)</option>
+          <option value="table11">Marta Vieira da Silva (Orlando Pride)</option>
+          <option value="table12">Olivia_Moultrie (Portland Thorns FC)</option>
+          <option value="table13">Racheal Kundananj (Bay FC)</option>
+          <option value="table14">Sophia Smith (Portland Thorns FC)</option>
+          <option value="table15">Temwa Chawinga (Kansas City Current)</option>
+          <option value="table16">Trinity Rodman (Washington Spirit)</option>
+          <option value="table17">Tyler Lussi (North Carolina Courage)</option>
+          <option value="table18">Vanessa DiBernardo (Kansas City Current)</option>
+          <option value="table19">Yazmeen Ryan (NJ/NY Gothan FC)</option>
+        </select>
+    </div>
+    <div class="outer-cont">
+        <div class="attedence-cont-2">
+        <div id="ranking-table">
+             <!-- Sentences or tables will be displayed here -->
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="outer-cont">
+
+        <iframe src="artboard/Attendance artborad1.html" width="725 px" height="250 px" style="border:none;"></iframe>
+           
+    </div>
+
+
+    <div class="outer-cont">
+        <div class="attedence-cont-2">
+            <svg id="lineChart" width="600" height="500"></svg>
+        </div>    
+    </div>
+
+
+        <div class="outer-cont">
+            <div class="attedence-cont-2">
+            <iframe src="artboard/Attendance artborad2.html" width="725 px" height="465 px" style="border:none;"></iframe>
+            </div>     
+        </div>
+    
+
+
+    <div class="outer-cont">
+     <div class="attedence-cont-1">
+         <div id="attendance-container">
+         <svg id="attendance-svg" width="2500" height="2000"></svg>
+            <div class="overlay-text-2016"><b>2016</b></div>
+            <div class="overlay-text-2017"><b>2017</b></div>
+            <div class="overlay-text-2018"><b>2018</b></div>
+            <div class="overlay-text-2019"><b>2019</b></div>
+            <div class="overlay-text-2021"><b>2021</b></div>
+            <div class="overlay-text-2022"><b>2022</b></div>
+            <div class="overlay-text-2023"><b>2023</b></div>
+            <div class="overlay-text-2024"><b>2024</b></div>
+        </div>
+    </div>
+    </div>
+    <div id="tooltip-attendance" class="tooltip"></div>
+    <div id="tooltip-timeline" class="tooltip"></div>
+    <div class="outer-cont">
+        <iframe src="artboard/Top_50_women_soccoer.html" width="725 px" height="1231 px" style="border:none;"></iframe>
+    </div>
+    <div class="outer-cont">
+        <iframe src="artboard/Top 15 highest paid.html" width="725 px" height="1370 px" style="border:none;"></iframe>
+    </div>
+        
+</body>
+</html>
