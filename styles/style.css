@@ -8,6 +8,11 @@ body, html {
   color: white
 }
 
+img {
+  max-width: 100%; /* Prevent images from overflowing their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra spacing under images */
+}
 
 #lineChart {
   width: 100%;
